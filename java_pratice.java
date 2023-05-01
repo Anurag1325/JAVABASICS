@@ -97,7 +97,22 @@ public class anurag{
 		System.out.println();
 		}
 	}
+		{// write a program to find factorial of n number
+			System.out.println("enter number:");
+  			int number=sc.nextInt();
+  			int i=1;
+  
+  			int factorial=1;
+  			while(i<number){
+      
+      			factorial+=factorial*i;
+      				i++;
+     
+  	}
+   	System.out.println(factorial);
+		}
 		{
+			
 			
 		
   }
