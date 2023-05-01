@@ -2,7 +2,9 @@ import java.util.Scanner;
 public class anurag{
 
 	public static void main(String[] args) {
+		
 		Scanner sc=new Scanner(System.in);
+		greeting();
     {
     //finding the average marks for n subjects
     System.out.println("enter the number of subjects:");
