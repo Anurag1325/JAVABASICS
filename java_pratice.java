@@ -288,7 +288,25 @@ public class anurag{
 		double cel;
 		cel=(F-32)*5/9;
 		System.out.println("temperature in celsius: "+cel);
-		}		
+		}
+			
+	{// convert decimal to binary
+		System.out.println("Enter a decimal number: ");
+		int num=sc.nextInt();
+		int bin[]=new int[100];
+		int i=0;
+		while(num>0)
+		{
+			bin[i++]=num%2;
+			num=num/2;
+			
+		}
+		System.out.println("Binary number is: ");
+		for(int j=i-1;j>=0;j--)
+		{
+			System.out.println(bin[j]);
+		
+		}
 	
 			
 			
