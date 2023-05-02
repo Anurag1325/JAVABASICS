@@ -332,6 +332,32 @@ public class anurag{
 		}
 	
 	}
+	{// JAVA PROGRAM TO FIND GCD BETWEEN TWO NUMBERS
+		long number1,number2;
+		System.out.println("enter number1: ");
+		number1=sc.nextLong();
+		System.out.println("enter number2: ");
+		number2=sc.nextLong();
+		if(number1>0 && number2>0) {
+		long result=gcdCal(number1,number2);
+		System.out.println("GCD OF TWO NUMBERS: "+result);		
+		}
+		else
+		
+		System.out.println("please enter numbers greater than zero");
+			
+		}
+		static long gcdCal(long i,long j) {
+		while(j>0)
+		{
+			long temp=j;
+			j=i%j;
+			i=temp;
+		}
+		return i;
+			
+		}
+				
 			
   }
 }
