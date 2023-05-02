@@ -198,6 +198,24 @@ public class anurag{
 	}else{
   		System.out.println("not eligible for vacination");
 }
+		{//fibonacci series
+			System.out.println("enter number of terms");
+		int number=sc.nextInt();
+		int i=0,j=1,nextTerm;
+		System.out.println("Fibonacci series is ");
+		for(int x=0;x<number;x++)
+		{
+		if(x<=1)
+		nextTerm=x;
+		else
+		{
+		nextTerm=i+j;
+		i=j;
+		j=nextTerm;
+		}
+		System.out.println(nextTerm);
+		}
+	}	
 		
 		
   }
