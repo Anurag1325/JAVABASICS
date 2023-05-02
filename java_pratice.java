@@ -239,7 +239,6 @@ public class anurag{
 		}
 		{java program to check leap year or not
 		long a,year,c;
-        	Scanner sc=new Scanner(System.in);
 	   	System.out.print("enter  any  calendar year :");
         	year=sc.nextLong();	     
 	    	if(year!=0)
