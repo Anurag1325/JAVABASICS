@@ -262,6 +262,25 @@ public class anurag{
 		}
 		System.out.println("Sum of digit of a number is num: "+sum);
 		}
+		
+		
+		{// find prime numbers between 1 to n
+		int i,count;
+		System.out.println("enter number:");
+		int number=sc.nextInt();
+		System.out.println("prime numbers between 1 to "+number+ " are: ");
+		for(int j=2;j<=number;j++) {
+		count=0;
+		for(i=1;i<=j;i++) {
+		if(j%i==0) {
+		count++;
+					
+		}
+		}
+		if(count==2) {
+		System.out.println(j+" ");
+		}
+		}
 	
   }
 }
