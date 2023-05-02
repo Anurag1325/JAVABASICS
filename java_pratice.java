@@ -226,7 +226,17 @@ public class anurag{
 		double value=present*Math.pow((1+interest/100),time);
 		System.out.println("value is:"+value);
 		}
-		
+		{// Reverse A string
+			System.out.println("Enter a string:");
+		String Str = sc.nextLine();
+		char[] ch=Str.toCharArray();
+		System.out.println("Reverse of a string is:");
+		int j=ch.length;
+		for(int i=j;i>0;i--)
+		{
+			System.out.println(ch[i-1]);
+		}
+		}
 		
 		
   }
