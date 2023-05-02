@@ -282,6 +282,16 @@ public class anurag{
 		}
 		}
 	
+		{ //java program convert fahrenheit to celsius
+		System.out.println("enter the termperature in fahrenheit: ");
+		double F=sc.nextDouble();
+		double cel;
+		cel=(F-32)*5/9;
+		System.out.println("temperature in celsius: "+cel);
+		}		
+	
+			
+			
   }
 }
 
