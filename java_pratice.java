@@ -215,7 +215,18 @@ public class anurag{
 		}
 		System.out.println(nextTerm);
 		}
-	}	
+	}
+		{// java program to calculate future investment value
+			System.out.println("enter present value:");
+		double present=sc.nextDouble();
+		System.out.println("Enter the interest value:");
+		double interest=sc.nextDouble();
+		System.out.println("enter the time period:");
+		double time=sc.nextDouble();
+		double value=present*Math.pow((1+interest/100),time);
+		System.out.println("value is:"+value);
+		}
+		
 		
 		
   }
