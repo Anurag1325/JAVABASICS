@@ -307,8 +307,31 @@ public class anurag{
 			System.out.println(bin[j]);
 		
 		}
+		{// java program count vowels in a string
+		String txt;
+		System.out.println("enter the text: ");
+		txt=sc.nextLine();
+		System.out.println("vowels in "+txt+" are: ");
+		vowels(txt);
+	}
+	static void vowels(String str)
+	{
+		char ch;
+		int i=0;
+		for(int j=0;j<str.length();j++)
+		{
+			ch=str.charAt(j);
+			if(ch=='a'||ch=='e'||ch=='o'||ch=='u'||ch=='i'||ch=='A'||ch=='E'||ch=='O'||ch=='U'||ch=='I') 
+			{
+				i=1;
+				System.out.println(ch);
+			}	
+			}
+		if(i==0)
+			System.out.println("there's no vowels in the text");
+		}
 	
-			
+	}
 			
   }
 }
