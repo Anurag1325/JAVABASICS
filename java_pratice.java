@@ -237,8 +237,23 @@ public class anurag{
 			System.out.println(ch[i-1]);
 		}
 		}
+		{java program to check leap year or not
+		long a,year,c;
+        	Scanner sc=new Scanner(System.in);
+	   	System.out.print("enter  any  calendar year :");
+        	year=sc.nextLong();	     
+	    	if(year!=0)
+	    {
+		a=(year%400==0)?(c=1):((year%100==0)?(c=0):((year%4==0)?(c=1):(c=0)));       
+		if(a==1) 
+		    System.out.println(year+" is a leap year");       
+               	else
+		    System.out.println(year+" is not a leap year");                       
+	    }
+	    else
+		System.out.println("year zero does not exist ");	
 		
-		
+		}
   }
 }
 
