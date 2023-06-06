@@ -357,7 +357,16 @@ public class anurag{
 		return i;
 			
 		}
-				
+			{int [] arr= {1,3,4,9,2,5,17,98,109,72};
+		for(int i=0;i<arr.length;i++) {
+		System.out.print(arr[i]);
+		
+		}
+		System.out.println();
+		Arrays.sort(arr);
+		for(int j=0;j<arr.length;j++) {
+		System.out.print(arr[j]);;}
+			}		
 			
   }
 }
