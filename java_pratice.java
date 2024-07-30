@@ -1,3 +1,4 @@
+import java.util.*;
 import java.util.Scanner;
 public class anurag{
 
@@ -366,7 +367,171 @@ public class anurag{
 		Arrays.sort(arr);
 		for(int j=0;j<arr.length;j++) {
 		System.out.print(arr[j]);;}
-			}		
+			}
+		
+        System.out.println("Enter the length of array:");;
+        int length=sc.nextInt();
+        int[] arr=new int[length];
+        for(int i=0;i<length;i++){
+            System.out.println("Enter the element:");
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        System.out.println("enter the target element:");
+        int target=sc.nextInt();
+        for(int i=0;i<length;i++){
+            if(arr[i]==target){
+                count+=1;
+            }
+        }
+        System.out.println("Count:"+count);
+        
+		
+	int length=sc.nextInt();
+        int[] arr=new int[length];
+        for(int i=0;i<length;i++){
+            arr[i]=sc.nextInt();
+        }
+        int target=sc.nextInt();
+        boolean found=false;
+        int index=-1;
+        for(int i=0;i<length;i++){
+            if(arr[i]==target){
+                found=true;
+                index=i;
+                break;
+            }
+        }
+        if(found){
+            System.out.println("target elemnt "+target+" is in array with index position "+index);
+        }else{
+            System.out.println(-1);
+        }
+        
+        int[] arr=new int[length];
+        for(int i=0;i<length;i++){
+            arr[i]=sc.nextInt();
+        }
+        boolean found=false;
+        int target=sc.nextInt();
+            for(int j=0;j<length;j++){
+                if((arr[j]+arr[j+1])==target){
+                    found=true;
+                    break;
+                }
+                }
+        if(found){
+            System.out.println("Sum does  match");
+        }else{
+            System.out.println("wrong input");
+        }
+
+        
+        
+        int length=sc.nextInt(); //length of integer
+        int[] arr=new int[length];
+        for(int i=0;i<length;i++){
+            arr[i]=sc.nextInt();
+        }
+        int product=1;
+        for(int i=0;i<length;i++){
+            product=product*arr[i];
+        }
+        System.out.println(product);
+		if(n6==0){
+            return 1;
+        }
+        if(x==0){
+            return 0;
+        }
+        int xpower1=calcpower(x,n6-1);
+        int xpown=x*xpower1;
+        return xpown;
+    }
+    
+    public static void fib(int a,int b,int n5){
+        if(n5==0){
+            return;
+        }
+        int c=a+b;
+        System.out.print(c);
+        fib(b,c,n5-1);
+        
+        
+    }
+    public static int fact1(int i,int n4){
+        if(i==1||i==0){
+            return 1;
+        }
+        int fact11=fact1(i-1,n4);
+        return n4*fact11;
+        //System.out.println(result);
+    }
+    public static void fact(int i1,int n3,int product){
+        if(i1==n3){
+            product=product*i1;
+            System.out.println(product);
+            return;
+        }
+        product*=i1;
+        fact(i1+1,n3,product);
+    }
+    public static void printsum(int i,int n2,int sum){
+        if(i==n2){
+            sum+=i;
+            System.out.println(sum);
+            return;
+        }
+        sum=sum+i;
+        printsum(i+1,n2,sum);
+    }
+      public static void printass(int n){
+          if(n==0){
+              return;
+          }
+          System.out.println(n);
+          printass(n-1);
+      }
+     public static void printdec(int n1){
+          if(n1==6){
+              return;
+          }
+          System.out.println(n1);
+          printdec(n1+1);
+}
+      public static void main(String[] args){
+          int a=0;int b=1;
+        System.out.print(a);
+        System.out.print(b);
+        int n5=5;
+        
+        fib(a,b,n5-2);
+          int n=5;
+          int n1=1;
+          int n2=8;
+          fact(1,8,1);
+          printsum(1,8,0);
+          printass(n); 
+          printdec(n1);
+          int x=3,n6=5;
+          int ans=calcpower(x,n6);
+          System.out.println(ans);
+           
+          
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 			
   }
 }
